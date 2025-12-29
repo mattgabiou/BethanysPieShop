@@ -1,11 +1,13 @@
-﻿namespace BethanysPieShop.ViewModels
+﻿using BethanysPieShop.Models;
+
+namespace BethanysPieShop.ViewModels
 {
     public class PieListViewModel
     {
-        public IEnumerable<PieListViewModel> Pies { get; }
+        public IEnumerable<Pie> Pies { get; }
         public string? CurrentCategory { get; }
 
-        public PieListViewModel(IEnumerable<PieListViewModel> pies, string? currentCatetgory)
+        public PieListViewModel(IEnumerable<Pie> pies, string? currentCatetgory)
         {
             Pies = pies;
             CurrentCategory = currentCatetgory;
